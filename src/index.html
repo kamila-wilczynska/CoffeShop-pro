@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>My first website</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!--google fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Source+Sans+Pro:ital,wght@0,400;0,600;0,900;1,600&display=swap" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">El tigre </label>
+		<div class="main-nav">
+		<ul>
+			<li><a class="active" href="#home">HOME</a></li>
+			<li><a href="#product">PRODUCTS</a></li>
+			<li><a href="#contact">CONTACT</a></li>
+		</ul>
+	</div>
+	</nav>
+	<header class="splash">
+		-<div class="splash-inner">
+			<h1 class="page-title">Home of</h1>
+			<h1 class="page-title2">original taste</h1>
+			<h2 class="page-subtitle">Discover</h2>
+			<i class="icon-arrow"></i>
+		</div>
+	</header>
+	<div id="pages">
+		<section id="home">
+			<div id="home-wrapper"></div>
+		</section>
+		<section id="products">
+			<div id="products-list"></div>
+		</section>
+		<section id="contact">
+            <div id="contact-wrapper"></div>
+        </section>
+	</div>
+<!--HomePage-->
+	<script id="template-home-page" type="text/x-handlebars-template">
+        <div class="home">
+            <div class="container">
+                <div class="row">
+                    <div class="about-page-title">
+                        <h1>ABOUT US</h1>
+                    </div>
+                    <div class="about-description">
+                        <p>
+                        Who are we? Just a bunch of friends with
+                        a love for a good coffee and desire to create
+                        something new, something original.<br><br> Our coffees
+                        reflect us – young, wild and free.
+                        We are on the journey of new tastes...<br><br>
+                        </p>
+                        <h3>Join us!</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+<!--Product-->
+	<script id="template-products-page" type="text/x-handlebars-template">
+        <div class="products container">
+            <div class="page-title">
+                <h1>PRODUCTS</h1>
+            </div>
+            <div class="product-list col-10">
+                <div class="row">
+                    <div class="product col-12">
+                        <div class="product-title">
+                            <h1> {{name1}}</h1>
+                        </div>
+                        <div class="product-info">
+                            <p>
+                                {{description1}}
+                            </p>
+                        </div>
+                        <div class="product-rating">
+                            <h2>
+                                ROASTING: <span class="rating">{{roasting1}}</span>
+                            </h2>
+                            <h2>
+                                INTENSITY: <span class="rating">{{intensity1}}</span>
+                            </h2>
+                        </div>
+                        <div class="number-1">
+                            <img src="{{numberOne}}" alt="No1">
+                        </div>
+                    </div>
+                    <div class="image-1">
+                        <img src="{{images1}}" alt="LA LAGARTIJA">
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="image-2">
+                        <img src="{{images2}}" alt="EL TIGRE">
+                    </div>
+                    <div class="product col-12">
+                        <div class="product-title">
+                            <h1>{{name2}}</h1>
+                        </div>
+                        <div class="product-info">
+                            <p>
+                                {{description2}}
+                            </p>
+                        </div>
+                        <div class="product-rating">
+                            <h2>
+                                ROASTING: <span class="rating">{{roasting2}}</span>
+                            </h2>
+                            <h2>
+                                INTENSITY: <span class="rating">{{intensity2}}</span>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="product col-12">
+                        <div class="product-title">
+                            <h1> {{name3}}</h1>
+                        </div>
+                        <div class="product-info">
+                            <p>
+                                {{description3}}
+                            </p>
+                        </div>
+                        <div class="product-rating">
+                            <h2>
+                                ROASTING: <span class="rating">{{roasting3}}</span>
+                            </h2>
+                            <h2>
+                                INTENSITY: <span class="rating">{{intensity3}}</span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="image-3">
+                        <img src="{{images3}}" alt="LA CUCARACHA">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+<!--Contact-->
+    <script id="template-contact-page" type="text/x-handlebars-template">
+        <div class="contact-container container ">
+            <div class="row">
+                <div class="page-title col-12">
+                    <h1>CONTACT US</h1>
+                </div>
+                <div class="form col-12">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="title">Title</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="message">Message</label><br>
+                    <input class="text-area" type="text" id="message" name="message"><br>
+                    <button type="submit" value="submit">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+    </script>
+    <div class="footer col-md-12">
+        <div class="container">
+            <div class="row">
+                <h4>2022 EL TIGRE inc.</h4>
+            </div>
+        </div>
+    </div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+	<script src="js/app.js" type="module"></script>
+</body>
+</html>
