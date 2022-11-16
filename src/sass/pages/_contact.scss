@@ -1,0 +1,43 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: $mainFont;
+  padding-bottom: 50px;
+	  
+  
+  .form {
+    text-align: center;
+  
+    label {
+      letter-spacing: 3px;
+      margin: 10px 0;
+      font-weight: bold;
+    }
+  
+    input {
+      width: 280px;
+      border: 2px solid $blackColor;
+      margin: 10px 0;
+    }
+  
+    .text-area {
+      height: 100px;
+    }
+  
+    button {
+      margin: 10px 0;
+      padding: 15px 25px;
+      letter-spacing: 3px;
+      background: $primaryColor;
+      border: none;
+      color: $whiteColor;
+      text-align: center;
+      font-weight: bold;
+  
+    }
+  
+  }
+  
+}
