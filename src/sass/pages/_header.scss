@@ -2,7 +2,7 @@
   position: absolute;
   content: '';
   bottom: 0;
-  width: 200%;
+  width: 100%;
   opacity: 60%;
   height: 100vh;
   transform: translateX(-50%);
@@ -36,117 +36,6 @@
   }
 }
   
-.header-title::after {
-  position: absolute;
-  content: '';
-  bottom: -65px;
-  left: 50%;
-  width: 275px;
-  height: 6px;
-  transform: translateX(-50%);
-  background: #BEA67C;
-}
-
-.container-pro {
-  //max-width: 1140px;
-  margin: 0 auto;
-  width: 60%;	
-}
-
-.header::before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  width: 100%;
-  opacity: 60%;
-  height: 100vh;
-  transform: translateX(-50%);
-  background: black;
-  z-index: 1;
-}  
-  
-.header {
-  background-image: url(../images/background.png);
-  background-size: 100% 100%;
-  background-position: center;
-  height: 100vh;
-  max-width: 100%;
-  position: relative;
-  font-family: $mainFont;
-  z-index: 2;
-  
-  .header-discover h2 {
-    position: relative;
-    margin-top: -70px;
-    color: $whiteColor;
-    text-align: center;
-    letter-spacing: 1px;
-    font-family: $mainFont;
-    z-index: 2;
-  
-    .icon-arrow {
-      font-size: 35px;
-      z-index: 2;
-    }
-  }
-}
-  
-.header-title::after {
-  position: absolute;
-  content: '';
-  bottom: -65px;
-  left: 50%;
-  width: 275px;
-  height: 6px;
-  transform: translateX(-50%);
-  background: #BEA67C;
-}
-
-.container-pro {
-  //max-width: 1140px;
-  margin: 0 auto;
-  width: 60%;	
-}
-  
-  
-.header::before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  width: 100%;
-  opacity: 60%;
-  height: 100vh;
-  transform: translateX(-50%);
-  background: black;
-  z-index: 1;
-}  
-	
-.header {
-  background-image: url(../images/background.png);
-  background-size: 100% 100%;
-  background-position: center;
-  height: 100vh;
-  max-width: 100%;
-  position: relative;
-  font-family: $mainFont;
-  z-index: 2;
-	
-  .header-discover h2 {
-    position: relative;
-    margin-top: -70px;
-    color: $whiteColor;
-    text-align: center;
-    letter-spacing: 1px;
-    font-family: $mainFont;
-    z-index: 2;
-	
-    .icon-arrow {
-      font-size: 35px;
-      z-index: 2;
-    }
-  }
-}
-	
 .header-title::after {
   position: absolute;
   content: '';

@@ -174,20 +174,20 @@
   
 }
   
-@media (min-width: 868px) and (max-width: 991px){
+@media (min-width: 858px) and (max-width: 991px){
   // HEADER //
   
   .header::before {
-    height: 30vh;
+    height: 50vh;
   }  
 		
   .header {
-    height: 30vh;
+    height: 50vh;
 		
 
     .header-discover h2 {
       position: relative;
-      margin-top: -70px;
+      margin-top: -60px;
       color: $whiteColor;
       text-align: center;
       letter-spacing: 1px;
@@ -289,15 +289,6 @@
   width: 10%;
   transform: translateX(230%) translateY(-120%);
 }
-
-.home {
-  height: 50vh;
-}
-
-.home::before {
-  height: 50vh;
-}
-
   
   
 .product-info {
@@ -326,11 +317,11 @@
 }
 
 .home {
-  height: 50vh;
+  height: 75vh;
 }
 
 .home::before {
-  height: 50vh;
+  height: 75vh;
 }
 
 .foto-1 img {
@@ -422,11 +413,11 @@
     }
   
     .home {
-      height: 50vh;
+      height: 70vh;
     }
 
     .home::before {
-      height: 50vh;
+      height: 70vh;
     }
 
     .foto-1 img {
@@ -449,7 +440,7 @@
   
   }
   
-  @media (max-width: 414px) {
+  @media (min-width: 350px) and (max-width: 550px) {
     .header-title::after {
       top: 140px;
       width: 80px;
@@ -544,12 +535,12 @@
   
 }
 
-@media (min-width: 1280px) and (max-width: 1500px) {
-	.home {
-		height: 100vh;
-	  }
+@media (min-width: 1080px) and (max-width: 1500px) {
+  .home {
+    height: 100vh;
+  }
 	
-	  .home::before {
-		height: 100vh;
-	  }
+  .home::before {
+    height: 100vh;
+  }
 }
