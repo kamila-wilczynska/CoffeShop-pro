@@ -4,18 +4,17 @@
 
   // HOME //
   
-  .home {
-    height: 30vh;
-  }
-
-  .home::before {
-    height: 30vh;
-  }
 	
   .about-page-title {
     font-size: 20px;
   }
-	
+
+  .about-page-title h1 {
+    top: 60px;
+    transform: translateX(30%) translateY(-50%);
+
+  }
+
   .about-page-title::after {
     top: 90px;
     width: 300px;
@@ -35,11 +34,26 @@
   }
   
   // HEADER //
-  
+  .home{
+    height: 50vh;
+  }
+
+  .home::before{
+    height: 50vh;
+  }
+
+  .carousel-inner .carousel-item{
+    height: 60vh;
+  }
+
+  .carousel-item .back-picture{
+    height: 50vh;
+  }
+
   .header::before {
     height: 50vh;
   }  
-		
+
   .header {
     height: 50vh;
 		
@@ -176,7 +190,22 @@
   
 @media (min-width: 858px) and (max-width: 991px){
   // HEADER //
-  
+  .home{
+    height: 50vh;
+  }
+
+  .home::before{
+    height: 50vh;
+  }
+
+  .carousel-inner .carousel-item{
+    height: 50vh;
+  }
+
+  .carousel-item .back-picture {
+    height: 60vh;
+  }
+
   .header::before {
     height: 50vh;
   }  
@@ -316,13 +345,6 @@
   position: absolute;
 }
 
-.home {
-  height: 75vh;
-}
-
-.home::before {
-  height: 75vh;
-}
 
 .foto-1 img {
   order: 1;
@@ -412,13 +434,6 @@
       position: absolute;
     }
   
-    .home {
-      height: 70vh;
-    }
-
-    .home::before {
-      height: 70vh;
-    }
 
     .foto-1 img {
       order: 1;
@@ -446,7 +461,23 @@
       width: 80px;
       height: 2px;
     }
-  
+
+    .home{
+      height: 20vh;
+    }
+
+    .home::before{
+      height: 20vh;
+    }
+
+    .carousel-inner .carousel-item{
+      height: 30vh;
+    }
+
+    .carousel-item .back-picture{
+      height: 20vh;
+    }
+
     .header {
       height: 20vh;
     }
@@ -462,9 +493,11 @@
       height: 2px;
     }
   
-    .about-page-title {
+    .about-page-title h1 {
       font-size: 16px;
+      top: 90px;
     }
+
 	
     .about-page-title::after {
       top: 80px;
@@ -512,13 +545,7 @@
     position: absolute;
   }
   
-  .home {
-    height: 30vh;
-  }
 
-  .home::before {
-    height: 30vh;
-  }
 
   .foto-1 {
     order: 1;
@@ -535,12 +562,20 @@
   
 }
 
-@media (min-width: 1080px) and (max-width: 1500px) {
-  .home {
-    height: 100vh;
+@media (min-width: 368px) and (max-width: 768px) {
+  .carousel-caption{
+    position: absolute;
+    right: 5%;
+    bottom: 8.25rem;
+    left: 15%;
+    
   }
-	
-  .home::before {
-    height: 100vh;
+
+  .workers{
+    max-width: 40vw;
   }
+
+  
+
+ 
 }
