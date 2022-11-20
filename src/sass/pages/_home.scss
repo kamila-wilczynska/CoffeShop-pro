@@ -151,17 +151,10 @@ img {
   vertical-align: middle;
 }
 
-.layout {
-  &__item {
-    *+* {
-      margin-top: 1em;
-    }
-  }
-}
 
-.layout__item p {
-  text-align: left;
-}
+//.layout__item p {
+//  text-align: left;
+//}
 
 
 .rating {
@@ -220,9 +213,9 @@ img {
 
 
 .workers {
-  text-align: left;
+  text-align: right;
   position: relative;
   //letter-spacing: 10px;
   z-index: 2;
-  transform: translateX(40%) translateY(-90%);
+  //transform: translateX(40%) translateY(-90%);
 }
