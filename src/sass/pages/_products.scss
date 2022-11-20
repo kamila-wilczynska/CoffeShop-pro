@@ -23,6 +23,7 @@
 }
 
 .foto-1 {
+  position: relative;
   max-width: 400px;
   margin: 0;
   padding: 0;
@@ -84,4 +85,14 @@
 
 hr {
   background-color: #BEA67C;
+}
+
+#triangle-topleft {
+  width: 0;
+  height: 0;
+  border-top: 100px solid  #BEA67C;;
+  border-left: 100px solid transparent;
+  position: absolute;
+  transform: translateX(70%) translateY(30%);
+  
 }
